@@ -7,6 +7,15 @@ h1 {
   line-height: 1.1;
 }
 
+h2 {
+  font-size: 2.2em;
+  line-height: 1.1;
+}
+
+li {
+  font-size: 1.5em;
+}
+
 
 button {
   border-radius: 8px;

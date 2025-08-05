@@ -3,6 +3,7 @@ import ProductList from './components/ProductList';
 import Login from './components/Login';
 import Register from './components/Register';
 import Home from './components/Home';
+import Product from './components/Product';
 import { Route, Routes, Navigate, NavLink} from 'react-router';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/products" element={<ProductList />} />
+        {/* <Route path="/product" element={<Product />} /> */}
       </Routes>
     </div>
   );
