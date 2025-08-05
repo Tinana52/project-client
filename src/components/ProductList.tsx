@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 const ProductList = () => {
     const [products, setProducts] = useState([]);
     const getProducts = function(){
-        fetch('https://online-store-server-yvmh.onrender.com/api/products')
+        fetch('https://project-server-63ho.onrender.com/api/products')
         .then(response => response.json())
         .then(data => {
             setProducts(data);
