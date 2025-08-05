@@ -5,7 +5,7 @@
 .app{
   border: 1px solid black;
   padding: 10px;
-  width: 300px;
+  width: 100%;
   background-color:  whitesmoke;
 }
 
@@ -25,5 +25,15 @@
 .textInputs {
   display: flex;
   width: 75%;
+}
+
+select {
+  width: 10%;
+  padding: 5px;
+  font-size: medium;
+  display: flex;
+
+  border-radius: 1px;
+  box-sizing: border-box;
 }
 

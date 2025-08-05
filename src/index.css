@@ -39,3 +39,30 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+nav {
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+}
+nav a {
+  color: initial;
+  text-decoration: none;
+  font-size: 2em;
+  font-family: sans-serif;
+  padding: 4px 6px 4px 6px;
+  border-radius: 10px;
+  background-color: white;
+  display:inline-block;
+  margin: 2px;
+}
+nav a:hover {
+  background-color: #aaa;
+}
+.active{
+  color: green;
+  font-weight:bold;
+  }
+  
