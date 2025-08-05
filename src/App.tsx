@@ -1,6 +1,7 @@
 import './App.css';
 import ProductList from './components/ProductList';
 import Login from './components/Login';
+import Register from './components/Register';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <h1>ExitTraining Storefront</h1>
       <ProductList />
       <Login />
+      <Register />
     </div>
   );
 }

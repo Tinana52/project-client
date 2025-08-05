@@ -10,8 +10,8 @@ const ProductList = () => {
         });
     };
     useEffect(() => {getProducts()}, [] );
-    console.log(products);
-    return (<div className={'app'}>
+    //console.log(products);
+    return (<div className='app'>
         <h2>Product List</h2>
         <ul>
             {products.map((product: any, index: number) => (

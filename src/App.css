@@ -4,7 +4,7 @@
 
 .app{
   border: 1px solid black;
-  padding: 5px;
+  padding: 10px;
   width: 300px;
   background-color:  whitesmoke;
 }
@@ -22,7 +22,8 @@
   padding: 2rem;
 }
 
-.form {
+.textInputs {
   display: flex;
   width: 75%;
 }
+
