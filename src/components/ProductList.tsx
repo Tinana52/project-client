@@ -13,6 +13,11 @@ const ProductList = () => {
     //console.log(products);
     return (<div className='app'>
         <h2>Product List</h2>
+        <form className="searchForm">
+            <label htmlFor="search">Search:</label>
+            <input type={'text'} id="search" className="searchInput"></input>
+            <button className="searchButton" type="submit">Submit</button>
+        </form>
         <ul className="pList">
             {products.map((product: any, index: number) => (
                 <li className="pCard" key={index}>

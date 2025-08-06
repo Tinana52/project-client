@@ -9,7 +9,7 @@ const Login = () => {
                 <input type={'text'} id="username" className="textInputs"></input> <br></br>
                 <label htmlFor="password">Password:</label>
                 <input type={'password'} id="password" className="textInputs"></input> <br></br>
-                <button type="submit">Submit</button>
+                <button className="authButton" type="submit">Submit</button>
             </form>
         </div>
     )
