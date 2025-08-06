@@ -1,6 +1,14 @@
+#root {
+  background-color: #150578;
+  color: #78C0E0;
+  height: 100%;
+  padding: 2rem;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
+  height: max-content;
 }
 h1 {
   font-size: 3.2em;
@@ -13,59 +21,38 @@ h2 {
 
 }
 p {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 li {
   font-size: 1.5em;
 }
 
-.searchButton {
-  border-radius: 3px;
-  border: 1px solid;
-  margin: 5px;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
 
-.authButton {
+button {
   border-radius: 8px;
   border: 1px solid;
   padding: 0.5em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #449DD1;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  background-color: #f264ff;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  .authButton, .searchButton {
-    background-color: #f9f9f9;
-  }
-}
+
 
 nav {
-  background-color: lightgrey;
+  border: 1px solid black;
+  background-color: #0E0E52;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -79,15 +66,18 @@ nav a {
   font-family: sans-serif;
   padding: 6px 15px;
   border-radius: 10px;
-  background-color: white;
-  display:inline-block;
+  background-color: #192BC2;
+  display: inline-block;
   margin: 2px;
 }
 nav a:hover {
-  background-color: #aaa;
+  background-color: white;
 }
 .active{
-  color: green;
-  font-weight:bold;
-  }
   
+  font-weight:bold;
+}
+
+img {
+  width: 100%;
+}

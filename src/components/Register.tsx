@@ -20,7 +20,7 @@ const Register = () => {
                     <option value="user">User</option>
                     <option value="admin">Admin</option>
                 </select> <br></br>
-                <button className="authButton" type="submit">Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     )
