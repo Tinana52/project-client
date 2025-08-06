@@ -57,11 +57,12 @@ const ProductList = () => {
                     <h3>{product.name}</h3>
                     <div className="prod_title">
                         <p>{product.description}</p>
-                        ${product.price}
+                        <div className="price">${product.price}</div>
+                        
                     </div>
                     
-                    <p>In-Stock: {product.on_hand}</p>
-                    <button onClick={onCategoryClick} value={product.category}>{product.category}</button>
+                    <p className="bold">In-Stock: {product.on_hand}</p>
+                    <button onClick={onCategoryClick} className="catButton" value={product.category}>{product.category}</button>
                     
                 </li>
             ))}

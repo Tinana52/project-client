@@ -12,8 +12,9 @@ function App() {
       <nav>
         <NavLink to="/home">Home</NavLink>
         <NavLink to="/products">Products</NavLink>
-        <NavLink to="/register">Register</NavLink>
         <NavLink to="/login">Login</NavLink>
+        <NavLink to="/register">Register</NavLink>
+        
       </nav>
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
