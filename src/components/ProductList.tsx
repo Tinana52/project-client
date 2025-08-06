@@ -13,10 +13,14 @@ const ProductList = () => {
     //console.log(products);
     return (<div className='app'>
         <h2>Product List</h2>
-        <ul>
+        <ul className="pList">
             {products.map((product: any, index: number) => (
-                <li key={index}>
-                    {product['name']}
+                <li className="pCard" key={index}>
+                    <h3>{product['name']}</h3>
+                    {product.description} <br></br>
+                    Price: ${product.price} <br></br>
+                    Category: {product.category}
+
                 </li>
             ))}
         </ul>
