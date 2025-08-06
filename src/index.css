@@ -1,14 +1,13 @@
 #root {
   background-color: #150578;
   color: #78C0E0;
-  height: 100%;
   padding: 2rem;
 }
 
 body {
   margin: 0;
   font-family: sans-serif;
-  height: max-content;
+  background-color: #150578;
 }
 h1 {
   font-size: 3.2em;
@@ -20,8 +19,14 @@ h2 {
   line-height: 1.1;
 
 }
+
+h3 {
+  font-size: 1.75em;
+  line-height: 1.1;
+
+}
 p {
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 li {

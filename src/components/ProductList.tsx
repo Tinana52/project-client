@@ -12,16 +12,22 @@ const ProductList = () => {
         });
     };
     useEffect(() => {getProducts()}, [] );
+    const onCategoryClick = (event) => {
+        const cat = event.target.value;
+        const result = products.filter(function (prod){
+            return prod.category === cat;
+        });
+        setProducts(result);
+    }
     const searchFilter = (event) => {
         event.preventDefault();
         try{ 
             const search = document.getElementById("search").value;
-            const type = document.getElementById("type").value;
             
             //console.log(search);
             //console.log(type);
             const result = products.filter(function (prod){
-                return prod[type] === search;
+                return prod.name === search;
             });
             if(!search || result.length === 0){
                 throw new Error("Please input a valid filter option.");
@@ -41,12 +47,7 @@ const ProductList = () => {
     return (<div className='app'>
         <h2>Product List</h2>
         <form className="searchForm">
-            <select name="type" id="type">
-                <option value="name">Product Name</option>
-                <option value="id">Product ID</option>
-                <option value="category">Product Category</option>
-            </select>
-            <input type={'text'} id="search" className="searchInputs"></input>
+            <input type={'text'} id="search" className="searchInputs"></input><br></br>
             <button onClick={searchFilter} type="submit">Search</button>
         </form>
         
@@ -59,8 +60,9 @@ const ProductList = () => {
                         ${product.price}
                     </div>
                     
+                    <p>In-Stock: {product.on_hand}</p>
+                    <button onClick={onCategoryClick} value={product.category}>{product.category}</button>
                     
-                    Category: {product.category}
                 </li>
             ))}
         </ul>
