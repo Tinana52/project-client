@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
-const ProductList = () => {
-    const [products, setProducts] = useState([]);
+const ProductList = (props:any) => {
+    /* const [products, setProducts] = useState([]);
     const [fullProducts, setFullProducts] = useState([])
     const getProducts = async function(){
         await fetch('/api/products')
@@ -11,36 +11,36 @@ const ProductList = () => {
             setFullProducts(data);
         });
     };
-    useEffect(() => {getProducts()}, [] );
-    const onCategoryClick = (event) => {
+    useEffect(() => {getProducts()}, [] ); */
+    const onCategoryClick = (event:any) => {
         const cat = event.target.value;
-        const result = products.filter(function (prod){
+        const result = props.fullProducts.filter(function (prod:any){
             return prod.category === cat;
         });
-        setProducts(result);
+        props.setProducts(result);
     }
-    const searchFilter = (event) => {
+    const searchFilter = (event:any) => {
         event.preventDefault();
         try{ 
             const search = document.getElementById("search").value;
             
             //console.log(search);
             //console.log(type);
-            const result = products.filter(function (prod){
-                return prod.name === search;
+            const result = props.products.filter(function (prod:any){
+                return prod.name.toLowerCase() === search.toLowerCase();
             });
             if(!search || result.length === 0){
                 throw new Error("Please input a valid filter option.");
             }
             console.log(result);
-            setProducts(result);
+            props.setProducts(result);
         } catch(e){
             console.log(e);
             alert(e);
         }
     };
     const onResetClick = () => {
-        setProducts(fullProducts);
+        props.setProducts(props.fullProducts);
         document.getElementById("search").value = '';
     };
     //console.log(products);
@@ -52,7 +52,7 @@ const ProductList = () => {
         </form>
         
         <ul className="pList">
-            {products.map((product: any, index: number) => (
+            {props.products.map((product: any, index: number) => (
                 <li className="pCard" key={index}>
                     <h3>{product.name}</h3>
                     <div className="prod_title">
