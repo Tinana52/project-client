@@ -35,6 +35,10 @@ function App() {
         <Route path="/products" element={<ProductList products={products} setProducts={setProducts} 
         fullProducts={fullProducts} setFullProducts={setFullProducts} />} />
       </Routes>
+      <footer>
+        <p>Copyright &copy; 2025 all rights reserved</p>
+      </footer>
+      
     </div>
   );
 }

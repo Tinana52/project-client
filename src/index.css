@@ -2,7 +2,9 @@
   background-color: #150578;
   color: #78C0E0;
 }
-
+footer {
+  padding: 10px;
+}
 body {
   margin: 0;
   font-family: sans-serif;

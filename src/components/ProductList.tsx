@@ -32,7 +32,7 @@ const ProductList = (props:any) => {
             if(!search || result.length === 0){
                 throw new Error("Please input a valid filter option.");
             }
-            console.log(result);
+            //console.log(result);
             props.setProducts(result);
         } catch(e){
             console.log(e);
